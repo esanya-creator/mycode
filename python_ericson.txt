@@ -1,0 +1,66 @@
+install python
+
+IDE: manage programs 
+
+IDLE default IDE
+
+
+manage programs in organised way we use pycharm
+
+python.org(3.6.0)
+
+Variable:
+reserved memory location to store value
+
+Do we neeed to declare variable before using it?
+no need to declare the variable, We can declare as in needed.
+
+Data types:
+
+It is clasification that specifies which type of value a variable has and what type of mathematical,relation or logical operations can be applied to it 
+
+6 types:
+
+Numeric:It is used to store number(integer,Float,Complex,Long Type(no longer supports))
+
+can we convert complex to Int (complex to float) (intrepret confuses which needs to be converted real or imaginary)
+
+List
+It is most versatile datatype available in Python which can be written as a list of comma separated values between square brackets.
+
+
+Tuple
+It is sequence datatype similar list.enclosed with parathesis. list elements can change.
+tuple canot be updated.
+It is sequence of immutable python objects.Tuples are readonly datatypes.
+
+Strings:
+A string is a sequence of characters.We can create Strings by enclosing characters in quotes
+
+Set:
+It is an unordered collections of uniques items.
+Set is defined by values separated by comma inside brace()
+
+Dictonary:
+It is unordered collections of key value pairs.
+
+
+Prime numbers till 100
+
+i=2
+while(i<100):
+    j = 2
+	while (j <= (i/j)):
+	    if not (i%j): break
+		j=j+1
+	if(j>i/j):print(i,'is prime)
+	i=i+1
+	
++++++++++++++++++++++++++++
+It’s handy when you have two related operations which you’d like to execute as a pair, with a block of code in between. The classic example is opening a file, manipulating the file, then closing it:
+
+with open('output.txt', 'w') as f:
+    f.write('Hi there!')
++++++++++++++++++++++++++++++++++++++++++++=
+		
+Security Assertion Markup Language (SAML, pronounced sam-el[1]) is an open standard for exchanging authentication and authorization data between parties, in particular, between an identity provider and a service provider. As its name implies, SAML is an XML-based markup language for security assertions (statements that service providers use to make access-control decisions). SAML is also:

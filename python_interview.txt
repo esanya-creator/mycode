@@ -1,0 +1,15 @@
+1)Python Program to Reverse a Given Number
+2)Python Program to Accept Three Digits and Print all Possible Combinations from the Digits
+3)Python Program to Calculate the Number of Digits and Letters in a String
+4)Python Program to Check if a Given Key Exists in a Dictionary or Not
+5)Python Program to Count the Occurrences of Each Word in a Given String Sentence
+6)Python Program to Count the Number of Words in a Text File
+
+
+
+1) What is the difference between list and tuple?
+2) What are the built-in type does python provides?
+3)What is lambda in Python?
+4)What is module and package in Python?
+5)Explain how to delete a file in Python?
+6)Mention the use of the split function in Python?

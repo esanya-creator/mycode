@@ -1,0 +1,47 @@
+# Python program to swap two variables in single line 
+x = 5
+y = 10
+x, y = y, x 
+print "After Swapping values of x and y are", x, y 
+
+
+Lists in Python
+Lists are one of the most powerful tools in python. They are just like the arrays declared in other languages. But the most powerful thing is that list need not be always homogenous. A single list can contain strings, integers, as well as objects. Lists can also be used for implementing stacks and queues. Lists are mutable, i.e., they can be altered once declared.
+
+# Declaring a list 
+L = [1, "a" , "string" , 1+2] 
+print L 
+L.append(6) 
+print L 
+L.pop() 
+print L 
+print L[1] 
+
+
+Tuples in Python
+A tuple is a sequence of immutable Python objects. Tuples are just like lists with the exception that tuples cannot be changed once declared. Tuples are usually faster than lists.
+
+tup = (1, "a", "string", 1+2) 
+print tup 
+print tup[1] 
+
+
+Iterations or looping can be performed in python by ‘for’ and ‘while’ loops. Apart from iterating upon a particular condition, we can also iterate on strings, lists, and tuples.
+
+Example1: Iteration by while loop for a condition
+
+i = 1
+while (i < 10): 
+    i += 1
+    print i, 
+	
+
+L = [1, 4, 5, 7, 8, 9] 
+for  i in L: 
+    print i, 
+	
+
+for  i in range(0, 10): 
+    print i, 
+	
+	

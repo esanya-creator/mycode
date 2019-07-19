@@ -1,0 +1,241 @@
+Class are logical collections of attributes and methods
+
+Objecte are instances of Class
+
+So at the time of creating an object you're giving life to a class which is also called as an object instantiation.
+
+The first thing is the noun which is name a place or an animal or a thing, which will be the name of your class.
+
+The first thing is the noun which is name a place or an animal or a thing, which will be the name of your class.
+
+The second thing that you need to look for is an adjective which are properties that further define your noun, which will be the attributes of your class.
+
+The second thing that you need to look for is an adjective which are properties that further define your noun, which will be the attributes of your class.
+
+And the third thing that you need to look for is verbs which are the actions that are performed by your noun, which will be the methods of your class.
+
+And the third thing that you need to look for is verbs which are the actions that are performed by your noun, which will be the methods of your class
+
+
+SELF:
+this is a default parameter that the methods of your class accept and it is used in order to access the attributes of your class.
+SuperHero->Class [give all discriptions in class]
+
+>Noun name of class
+	SuperHero name
+>properties attributes
+	RedCap
+>verbs will be methods
+	Being able to fly
+
+
+self:used to access attributes of the class
+
+
+Everything in python is an object
+
+number=[1,3,4]
+type(number) numbers is an object to the class list
+
+Attributes:
+
+Class attributes
+
+These are common to all instacne of a class
+
+Instance attributes
+Instance of attrribute is specfic to instance of class
+
+
+Decoraters are the fucntions that takes another function and extends there functionality, They are denoted by @
+
+Static methods are the methods which don't take slef parameter
+Methods of class make use of slef parameter that uses to access or modify instance of a classs
+
+Intialization of object:
+
+When object is created init method was invoked by default.
+
+>Attributes are properties that further define a class
+
+class attribute:
+These are the attributes that are shared accross all the instances of a class
+
+
+Abstraction:
+
+
+
+
+There are mutable and Immutable types of Pythons built in types Mutable built-in types
+
+List
+Sets
+Dictionaries
+Immutable built-in types
+
+Strings
+Tuples
+Numbers
+
+
+decorator take as input function and provide outPut function with someextend functionality
+decorator help to make our code shorter.
+If you want to some extra functionality for existing fucntionality we go for decorator
+It will take some funciton as aurgument
+
+
+def superDivison(func):
+    def inner(a,b):
+        if b == 0:
+            print("Division is not possible")
+        else:
+            return func(a.b)
+    return inner
+
+@superDivison
+def divison(a,b):
+    return(a/b)
+
+print(divison(4,0))
+
+s="NEWS"
+s1=""
+i=len(s)-1
+
+while(i>=0):
+    s1=s1+s[i]
+    i=i-1
+print(s1)
+
+
+Reverse string:
+s=687869
+rev=0
+while(s>0):
+    dig=s%10
+    rev=rev*10+dig
+    s=s//10
+print(rev)
+
+loc=("C:\Users\ereddy\Desktop\demo.txt")
+word="hi"
+k=0
+f=open(loc,"r")
+for x in f:
+    words=x.split()
+    for i in words:
+        if i == word:
+            k=k+1
+print(k)
+
+filename=input("Enter file name: ")
+for line in reversed(list(open(filename))):
+    print(line.rstrip())
+
+with open("test.txt") as f:
+    with open("out.txt", "w") as f1:
+        for line in f:
+            f1.write(line)
+
+import webbrowser
+
+query = input("Input your query: ")
+webbrowser.open("https://google.com/search?q=%s" % query)
+
+
+from datetime import datetime
+
+print(datetime.now().strftime("Today is %A, %B %d, %Y"))
+
+
+
+from datetime import datetime
+
+age = int(input("What's your age? "))
+year_birth = datetime.now().year - age
+print("We think you were born back in %s" % year_birth)
+
+import random
+
+characters = "abcdefghijklmnopqrstuvwxyz01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()?"
+chosen = random.sample(characters, 6)
+password = "".join(chosen)
+print(password)
+
+while True:
+    psw=input("enetr a password:")
+    if any(i.isdigit for i in psw) and any(i.isupper for i in psw) and len(psw)>5:
+        print("password is valis")
+        break
+    else:
+        print("password is not valid")
+
+while True:
+    notes = []
+    psw = input("Enter password: ")
+    if not any(i.isdigit() for i in psw):
+        notes.append("You need at least one number")
+    if not any(i.isupper() for i in psw):
+        notes.append("You need at least one uppercase letter")
+    if len(psw) < 5:
+        notes.append("You need at least 5 characters")
+    if len(notes) == 0:
+        print("Password is fine")
+        break
+    else:
+        print("Please check the following: ")
+        for note in notes:
+            print(note)
+
+compilation error
+logical errro
+run time error
+
+even we get error our exectution should not stop
+try;
+except:only when there is error
+finally;It will execute when there is error or not
+
+Thread:
+when you breakdown big process into multiple tasks that is called thread
+
+from threading import *
+import time
+class Hello(Thread):
+    def run(self):
+        for i in range(5):
+             print("hello")
+             time.sleep(1)
+
+class Hi(Thread):
+    def run(self):
+        for i in range(5):
+            print("hi")
+            time.sleep(1)
+
+t1=Hello()
+t2=Hi()
+
+t1.start()
+t2.start()
+
+************************************************
+same method perfoms differently based on parameter object overloading:
+
+# class Bank():
+#     def rateOfInterest(self):
+#         return 0
+# class ICIC(Bank):
+#     def rateOfInterest(self):
+#         pass
+# obj=ICIC()
+# print (obj.rateOfInterest())
+class Person():
+    def sayHello(self,name=None):
+        if name is not None:
+            print("Hello"+name)
+        else:
+            print("Hello")
+obj = Person()
+obj.sayHello("Esanya")

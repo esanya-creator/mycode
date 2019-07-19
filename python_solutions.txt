@@ -1,0 +1,185 @@
+1)Python Program to Reverse a Given Number
+n=int(input("Enter number: "))
+rev=0
+while(n>0):
+    dig=n%10
+    rev=rev*10+dig
+    n=n//10
+print("Reverse of the number:",rev)
+
+************************************************************************************************8
+2)Python Program to Accept Three Digits and Print all Possible Combinations from the Digits
+Problem Solution
+1.	Take in the first, second and third number and store it in separate variables.
+2.	Then append all the three numbers to the list.
+3.	Use three for loops and print the digits in the list if none of their indexes are equal to each other.
+4.	Exit.
+
+Program/Source Code
+Here is the source code of the Python Program to accept three distinct digits and prints all possible combinations from the digits. The program output is also shown below.
+
+ 
+a=int(input("Enter first number:"))
+b=int(input("Enter second number:"))
+c=int(input("Enter third number:"))
+d=[]
+d.append(a)
+d.append(b)
+d.append(c)
+for i in range(0,3):
+    for j in range(0,3):
+        for k in range(0,3):
+            if(i!=j&j!=k&k!=i):
+                print(d[i],d[j],d[k])
+Program Explanation
+1.	User must enter the first, second and third number.
+2.	All the elements are appending into a list for the ease of comparison.
+3.	The for loops range from 0-2 which are basically the indexes of the three elements in the list.
+4.	If none of the indexes are equal to each other, the element associated with the particular element in the list is printed.
+
+Runtime Test Cases
+ 
+Case 1:
+Enter first number:1
+Enter second number:2
+Enter third number:3
+1 2 3
+1 3 2
+2 1 3
+2 3 1
+3 1 2
+3 2 1
+
+********************************************************************
+3)Python Program to Calculate the Number of Digits and Letters in a String.
+Problem Solution
+1. Take a string from the user and store it in a variable.
+2. Initialize the two count variables to 0.
+3. Use a for loop to traverse through the characters in the string and increment the first count variable each time a digit is encountered and increment the second count variable each time a character is encountered.
+4. Print the total count of both the variables.
+5. Exit.
+
+string=raw_input("Enter string:")
+count1=0
+count2=0
+for i in string:
+      if(i.isdigit()):
+            count1=count1+1
+      count2=count2+1
+print("The number of digits is:")
+print(count1)
+print("The number of characters is:")
+print(count2)
+
+Runtime Test Cases
+ 
+Case 1:
+Enter string:Hello123
+The number of digits is:
+3
+The number of characters is:
+8
+
+*********************************************************************88
+Python Program to Check if a Given Key Exists in a Dictionary or Not
+
+d={'A':1,'B':2,'C':3}
+key=raw_input("Enter key to check:")
+if key in d.keys():
+      print("Key is present and value of the key is:")
+      print(d[key])
+else:
+      print("Key isn't present!")
+	  
+Case 1:
+Enter key to check:A
+Key is present and value of the key is:
+1
+ 
+Case 2:
+Enter key to check:F
+Key isn't present!
+***************************************************************
+Python Program to Count the Occurrences of Each Word in a Given String Sentence
+
+string=raw_input("Enter string:")
+word=raw_input("Enter word:")
+a=[]
+count=0
+a=string.split(" ")
+for i in range(0,len(a)):
+      if(word==a[i]):
+            count=count+1
+print("Count of the word is:")
+print(count)
+
+Case 1:
+Enter string:hello world
+Enter word:hello
+Count of the word is:
+1
+******************************************************************
+Python Program to Count the Number of Words in a Text File
+
+fname = input("Enter file name: ")
+ 
+num_words = 0
+ 
+with open(fname, 'r') as f:
+    for line in f:
+        words = line.split()
+        num_words += len(words)
+print("Number of words:")
+print(num_words)
+
+Program Explanation
+1. User must enter a file name.
+2. The file is opened using the open() function in the read mode.
+3. A for loop is used to read through each line in the file.
+4. Each line is split into a list of words using split().
+5. The number of words in each line is counted using len() and the count variable is incremented.
+6. The number of words in the file is printed.
+
+Runtime Test Cases
+ 
+Case 1:
+Contents of file: 
+Hello world
+ 
+Output: 
+Enter file name: data1.txt
+Number of words:
+2
+
+*********************************************************
+
+
+
+2) What are the built-in type does python provides?
+
+There are mutable and Immutable types of Pythons built in types Mutable built-in types
+
+List
+Sets
+Dictionaries
+Immutable built-in types
+
+Strings
+Tuples
+Numbers
+
+3) What is lambda in Python?
+It is a single expression anonymous function often used as inline function.
+
+4)What is module and package in Python?
+
+In Python, module is the way to structure program. Each Python program file is a module, which imports other modules like objects and attributes.
+
+The folder of Python program is a package of modules. A package can have modules or subfolders.
+
+5)Explain how to delete a file in Python?
+By using a command os.remove (filename) or os.unlink(filename)
+
+6)Mention the use of the split function in Python?
+
+The use of the split function in Python is that it breaks a string into shorter strings using the defined separator. It gives a list of all words present in the string.

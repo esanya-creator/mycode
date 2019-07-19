@@ -1,0 +1,89 @@
+Jekins
+CI:Continous Integration
+
+befor CI:
+
+dev->sourceCOde repository->ANT/MAven(entire source code will be pused)->testing env->reasle.[no bugs will be deployed too production]
+
+dev team have to wait for long time to get test results
+test fail->dev have to check entire sourcce code.
+
+software delivery process was slow
+
+cotinuos feedback like architectural issues,build failures test status etc not present.
+
+CT:
+                       CT
+dev->source repo ->[build, test, deploye] ->frequest release
+
+Before:
+Entire source code is build and then tested
+Dev team has to wait for test results
+no feedback
+
+After CI:
+Every comment made in the source code is built and tested
+Dev team gets results fast
+Feedback is present.
+
+
+CI tools:
+Jenkins
+Buildbot
+Travis CI
+Bamboo
+
+Jenkins:
+Jenkin is a open source automation tool written in JAVA with plugs built for continous Integration purpose.
+Jenkins supports 1000 of plugs ,which allow jenkins to be extended to meet specific needs of individual project
+Plugins like:
+Test->Junit
+Reports->HTML publisher
+Notification->Jenkins Build  notifications Plugins
+Deployment->Deploy plugin
+Complie->Maven
+
+
+JDA:Jenkins distributed Architecture:
+
+
+******************************************************************************************************
+
+buble sort:
+def sort(num):
+    for i in range(len(num)-1,0,-1):
+        for j in range(i):
+            if num[j] > num[j+1]:
+                num[j],num[j+1]=num[j+1],num[j]
+
+
+num=[7,3,4,2,1]
+sort(num)
+print(num)
+
++++++++++++++++++++++++++++
+max in list
+
+a = [12, 10, 50, 100, 24]
+
+max = a[0]
+
+for number in a:
+    if number>max:
+        max=number
+print(max)
+
+++++++++++++++++
+min in list
+a = [12, 10, 50, 100, 24]
+
+min = a[0]
+
+for number in a:
+    if min > number:
+        min=number
+print(min)
+
+
+
+
